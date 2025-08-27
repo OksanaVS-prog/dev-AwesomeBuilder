@@ -5,11 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
-    <title>Vite App</title>
+    <title>AwesomeBuilder</title>
   </head>
-  <a href="nav.html">nav</a>
-   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <script type="module" src="/src/main.js"></script>
+   <body class="bg-amber">
+     <a href="nav.html" class="flex fixed left-6 bottom-6 bg-pink-400 text-white justify-center items-center rounded-full w-16 h-10 py-1 px-3 hover:bg-pink-700">nav</a>
+     {{> header logo='/public/awesome.webp' }} 
+     {{> page-title title="AwesomeBuilder" subtitle='subtitle' }}
+     {{> footer }}
+     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,2 +1,35 @@
 @import 'tailwindcss';
 
+@theme {
+    --color-blue: #3338A0;
+    --color-yellow: #C59560;
+    --color-amber: #FCC61D;
+    --color-brand: #F7F7F7;
+
+    --text-h1: 48px;
+    --text-h2: 42px;
+    --text-h3: 36px;
+    --text-h4: 28px;
+    --text-h5: 24px;
+    --text-h6: 20px; 
+
+    --margin-template: 100px;
+    --padding-template: 100px;
+
+    --font-funnel-display: "Funnel Display", sans-serif;
+}
+
+@layer components {
+    body {
+        font-family: var(--font-funnel-display);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: var(--color-brand);
+    }
+
+    h1 {
+        font-size: var(--text-h1);
+        color: var(--color-amber);
+    }
+}
