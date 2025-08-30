@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>nth-child</title>
+  </head>
+   <body class="bg-yellow">
+     {{> header logo='/public/awesome.png' }} 
+     {{> page-title title="Псевдокласи nth-child" }}
+        <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">: first-child</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold  first:bg-blue">7</div>
+                </div>
+        </section>
+        <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">: last-child</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold last:bg-blue">7</div>
+                </div>
+        </section>
+        <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :odd непарные</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold odd:bg-blue">7</div>
+                </div>
+        </section>
+         <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :even парные</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold even:bg-blue">7</div>
+                </div>
+        </section>
+         <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :nth-4</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-4:bg-blue">7</div>
+                </div>
+        </section>
+        <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :nth(3n+1) каждый 3-й элемент,начиная с 1-го</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[3n+1]:bg-blue">7</div>
+                </div>
+        </section>
+         <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :nth(n) каждый элемент</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n]:bg-blue">7</div>
+                </div>
+        </section>
+        <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :nth(-n+3) первые 3 элемента</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+3]:bg-blue">7</div>
+                </div>
+        </section>
+                <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :nth(n+6) начиная с 6 элемента</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[n+6]:bg-blue">7</div>
+                </div>
+        </section>
+          <section class="example bg-yellow-700 mb-16 lg:mb-24 pt-12 pb-16 lg:pt-18 lg:pb-24">
+            <div class="container mx-auto px-3">
+                <h2 class="font-semibold text-stone-100 text-3xl lg:text-4xl lg:pt-4 pb-8">nth-child :диапозон</h2>
+                <div class="flex border">
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">1</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">2</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">3</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">4</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">5</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">6</div>
+                    <div class="flex border h-16 lg:h-24 w-16 lg:w-24 justify-center items-center font-bold nth-[-n+2]:bg-blue nth-[n+6]:bg-blue">7</div>
+                </div>
+        </section>
+     {{> footer }}
+  </body>
+</html>
