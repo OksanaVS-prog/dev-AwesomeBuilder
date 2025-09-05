@@ -37,3 +37,8 @@
         color: var(--color-amber);
     }
 }
+
+[alt=""] {
+    filter: blur(2px);
+    opacity: 0.8;
+}
