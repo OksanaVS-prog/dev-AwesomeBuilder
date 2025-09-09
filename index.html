@@ -9,25 +9,9 @@
   </head>
    <body class="bg-gray-800">
      {{> header logo='/awesome.png' }} 
-     {{> page-title title="AwesomeBuilder" }}
     <div class="container mx-auto px-3 max-w-5xl font-sen bg-black">
-     <header class="flex items-center relative py-6">
-      <div class="w-19.5 h-6"><img src="/logo-banner.svg" alt="logo-Robin"></div>
-      <div id="mobile-container" class="md:ml-auto hidden md:block absolute md:static bg-indigo-950 md:bg-transparent top-18 -left-3 w-[calc(100%+24px)] md:w-auto">
-      <nav class="flex flex-col md:flex-row">
-        <a href="#" class="font-bold py-7.75 border px-6 leading-[150%] hover:bg-purple transition duration-300">Experience</a>
-        <a href="#" class="font-bold py-7.75 border px-6 leading-[150%] hover:bg-purple transition duration-300">Work</a>
-        <a href="#" class="font-bold py-7.75 border px-6 leading-[150%] hover:bg-purple transition duration-300">Photography</a>
-        <a href="#" class="font-bold py-7.75 border px-6 leading-[150%] hover:bg-purple transition duration-300">Contact</a>
-      </nav>
-      </div>
-      <button id="burger" class="ml-auto w-6 h-6 relative before:absolute before:w-4.5 before:h-0.75 before:bg-neutral-300 before:top-1.5 before:left-1 after:absolute after:w-3 after:h-0.75 after:bg-neutral-300 after:top-3.5 after:right-0.5 hover:before:bg-purple  hover:after:bg-purple md:hidden">
-
-      </button>
-     </header>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id sequi corporis aliquid explicabo, minima sunt quod et quibusdam ab sed labore ratione, fugit cumque. Animi fuga sunt maiores esse temporibus!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem beatae odit animi at corporis? Debitis, error, alias perspiciatis illo vitae in asperiores sunt omnis perferendis nobis eligendi optio? Quia!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque nisi, omnis perferendis ipsa, repudiandae, ab consectetur animi dignissimos nemo dolorem illum deserunt iusto sequi? Dolores provident suscipit porro ducimus.
+    {{> header-portfolio}}
+    {{> banner}}
      </div>
     
      {{> footer }}
