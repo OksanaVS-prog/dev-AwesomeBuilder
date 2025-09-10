@@ -10,6 +10,7 @@
     --color-neutral-300: #C4C4C4;
     --color-purple: #5221E6;
     --color-indigo-950: #181823;
+    --color-gray-400: #808080;
 
     --text-h1: 48px;
     --text-h2: 42px;
@@ -17,7 +18,6 @@
     --text-h4: 28px;
     --text-h5: 24px;
     --text-h6: 20px; 
-    --text-banner-title: 78px;
 
     --margin-template: 100px;
     --padding-template: 100px;
@@ -42,6 +42,18 @@
     h1 {
         font-size: var(--text-h1);
     }
+
+    .banner-title {
+     font-size: 78px;
+
+     @media (max-width: 1024px) {
+     font-size: 56px;
+     }
+
+      @media (max-width: 768px) {
+     font-size: 32px;
+     }
+  }
 }
 
 [alt=""] {
