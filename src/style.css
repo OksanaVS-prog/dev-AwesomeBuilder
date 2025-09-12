@@ -11,6 +11,10 @@
     --color-purple: #5221E6;
     --color-indigo-950: #181823;
     --color-gray-400: #808080;
+    --color-gray-500: #8491A0;
+    --color-green-400: #3CC74E;
+    --color-blue-400: #609BFF;
+    --color-pink-400: #E95D90;
 
     --text-h1: 48px;
     --text-h2: 42px;
@@ -18,6 +22,9 @@
     --text-h4: 28px;
     --text-h5: 24px;
     --text-h6: 20px; 
+    --text-3xl: 32px;
+    --text-5xl: 55px;
+    --text-9xl: 117px;
 
     --margin-template: 100px;
     --padding-template: 100px;
@@ -54,6 +61,12 @@
      font-size: 32px;
      }
   }
+}
+
+.container {
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 [alt=""] {
