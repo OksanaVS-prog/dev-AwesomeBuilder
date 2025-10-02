@@ -1,0 +1,21 @@
+<div class="modal">
+    <div class="body-modal container text-3xl">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates debitis, aliquid porro nobis sapiente quam repudiandae eius corrupti deleniti! Rerum alias, commodi ab non consequatur unde numquam omnis ipsum aliquam. 
+    <button type="button" id="close-window" class="px-8 py-6 mt-30 bg-pink-300 hover:bg-pink-800">Close Window</button>
+    </div>
+</div>
+<style>
+    .modal {
+        position: fixed;
+        inset: 0;
+        background: #000000ba;
+        backdrop-filter: blur(10px);
+        z-index: 20;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        &.show {
+            display: grid;
+    }
+}
+</style>
