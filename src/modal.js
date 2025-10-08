@@ -1,17 +1,24 @@
 window.addEventListener('load', ()=> {
 
     const initModalWindow = ()=> {
-      const trigger = document.querySelector('#trigger')
-      const modal = document.querySelector('.modal')
-      const closeWindow = document.querySelector('#close-window')
+      const modalShowTriggers = document.querySelectorAll('[data-trigger]')
+      const modalCloseTriggers = document.querySelectorAll('[data-close-modal]')
 
-      trigger.addEventListener('click', ()=> {
-        modal.classList.add('show')
+      modalShowTriggers.forEach(trigger => {
+        trigger.addEventListener('click', ()=> {
+          const triggerData = trigger.getAttribute('data-trigger')
+          document.getElementById(triggerData).classList.add('show')
       })
-
-      closeWindow.addEventListener('click', ()=> {
-        modal.classList.remove('show')
+      }
+    )
+    
+      modalCloseTriggers.forEach(button => {
+        button.addEventListener('click', ()=> {
+      //  document.querySelector('.modal.show').classList.remove('show') 
+      button.closest('.modal').classList.remove('show')
       })
+      })
+      
     }
 
     initModalWindow()
