@@ -63,17 +63,5 @@ burgerBtn.addEventListener('click', ()=> {
 
 document.querySelectorAll('.tabs').length ? installTabs() : null;
 
-const getLoremImage = () => {
-        const images = document.querySelectorAll('img');
-
-        images.forEach(item => {
-            if (!item.getAttribute('src')) {
-                fetch('https://picsum.photos/332/420')
-                    .then(response => response.blob())
-                    .then(blob => item.src = URL.createObjectURL(blob))
-                    .catch(error => item.src = "assets/img/cat-scottish.webp");
-            }
-        });
-    };
 
  document.querySelectorAll('img').length ? getLoremImage() : null;
