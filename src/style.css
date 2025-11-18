@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 @import 'tailwindcss';
 
 
 @theme {
-    --color-blue: #0D5EA6;
-    --color-yellow: #C59560;
-    --color-amber: #FCC61D;
-    --color-brand: #F7F7F7;
+     
     --color-neutral-300: #C4C4C4;
     --color-neutral-400: #FFF3E4;
     --color-purple: #5221E6;
@@ -19,41 +16,19 @@
     --color-pink-400: #E95D90;
     --color-pink-200: #FBE4FF;
     
-    --text-h1: 48px;
-    --text-h2: 42px;
-    --text-h3: 36px;
-    --text-h4: 28px;
-    --text-h5: 24px;
-    --text-h6: 20px; 
+     
     --text-3xl: 32px;
     --text-5xl: 55px;
     --text-9xl: 117px;
 
-    --margin-template: 100px;
-    --padding-template: 100px;
-
-    --font-funnel-display: "Funnel Display", sans-serif;
-    --font-open-sans: "Open Sans", sans-serif;
-    --font-work-sans: "Work Sans", sans-serif;
-    --font-sen: "Sen", sans-serif;
+    --font-sen: "Sen";
 
     --container-4xl: 1116px;
     --container-5xl: 1464px;
 }
 
 @layer components {
-    body {
-        font-family: var(--font-funnel-display);
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        color: var(--color-brand);
-    }
-
-    h1 {
-        font-size: var(--text-h1);
-    }
-
+    
     .banner-title {
      font-size: 32px;
 
