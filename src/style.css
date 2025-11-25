@@ -15,7 +15,10 @@
     --color-blue-400: #609BFF;
     --color-pink-400: #E95D90;
     --color-pink-200: #FBE4FF;
-    
+
+    --color-twitter: #26A7DE;
+    --color-dribbble: #E94B88;
+    --color-linkedin: #0077B5;
      
     --text-3xl: 32px;
     --text-5xl: 55px;
@@ -23,12 +26,14 @@
 
     --font-sen: "Sen";
 
+    --container-2xl: 738px;
     --container-4xl: 1116px;
-    --container-5xl: 1464px;
+    --container-5xl: 1320px;
+    --container-7xl: 1440px;
 }
 
 @layer components {
-    
+
     .banner-title {
      font-size: 32px;
 
@@ -40,12 +45,6 @@
      font-size: 78px;
      }   
   }
-}
-
-.container {
-    max-width: 1320px;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 [alt=""] {
