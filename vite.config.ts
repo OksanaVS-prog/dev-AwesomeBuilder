@@ -5,16 +5,19 @@ import handlebars from 'vite-plugin-handlebars';
 import FullReload from 'vite-plugin-full-reload'
 
 export default defineConfig({
+  base: '/AwesomeBuilder/',
+
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src")
-    }
+      "@": resolve(__dirname, "src"),
+    },
   },
+
   plugins: [
     tailwindcss(),
     handlebars({
-      partialDirectory: resolve(__dirname, "src/partials")
+      partialDirectory: resolve(__dirname, "src/partials"),
     }),
-    FullReload(["src/partials/**/*"])
+    FullReload(["src/partials/**/*"]),
   ],
-})
+});
