@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
   speed: 3000,
-  freeMode: true,
+  freeMode: false,
 
   breakpoints: {
     0: {
