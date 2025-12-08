@@ -41,9 +41,12 @@
      font-size: 56px;
      }
 
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
      font-size: 78px;
      }   
+  }
+ .swiper-wrapper {
+    --swiper-wrapper-transition-timing-function: linear;
   }
 }
 
@@ -52,7 +55,4 @@
     opacity: 0.8;
 }
 
-.swiper {
-  width: 100%;
-  height: auto;
-}
+

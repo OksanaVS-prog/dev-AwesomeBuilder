@@ -1,27 +1,52 @@
+import '../css/style.css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
-  spaceBetween: 20,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 3000,
+  freeMode: true,
 
   breakpoints: {
-    0: { // мобильные
+    0: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       grid: {
         rows: 3,
         fill: 'row',
       },
-      loop: false, // ⚠️ обязательно выключить!
+      spaceBetween: 0, // ← УБИРАЕМ ОТСТУПЫ
+      loop: false,
     },
-    1024: { // десктоп
-      slidesPerView: 4,
+    1024: {
+      slidesPerView: 5,
       slidesPerGroup: 1,
+      grid: { rows: 1 },
+      spaceBetween: 20, // например, на десктопе можно оставить
       loop: true,
-      grid: {
-        rows: 1, // иначе loop ломается
-      },
     },
   },
+
+  on: {
+    init(sw) {
+      toggleAutoplay(sw);
+    },
+    resize(sw) {
+      toggleAutoplay(sw);
+    }
+  }
 });
+
+function toggleAutoplay(swiper) {
+  if (window.innerWidth >= 1024) {
+    swiper.autoplay.start();
+  } else {
+    swiper.autoplay.stop();
+  }
+}
 
 const burgerBtn = document.querySelector('#burger');
 const mobileContainer = document.querySelector('#mobile-container')
