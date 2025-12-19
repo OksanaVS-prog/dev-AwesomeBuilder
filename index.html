@@ -25,9 +25,12 @@
         class="relative w-6 h-6 cursor-pointer ml-auto before:absolute before:w-4.5 before:bg-neutral-300 before:h-0.75 before:top-1.5 before:left-1 after:absolute after:w-3 after:bg-neutral-300 after:h-0.75 after:top-4.5 after:right-0.5 hover:after:bg-purple hover:before:bg-purple md:hidden"></button>
     </header>    <section class="relative flex flex-col max-w-7xl mx-auto md:flex-row justify-end w-full md:pt-41.5 pb-12 md:pb-21 lg:before:absolute lg:before:w-4xl lg:before:h-full before:-top-1.5 lg:before:bg-indigo-950">
       <picture class="mx-auto md:mx-0 md:absolute left-0 top-41.5 mb-12 md:mb-0">
-        <source media="(min-width:  1024px )" srcset="assets/img/banner-xl.webp">
-        <source media="(min-width:  768px )" srcset="assets/img/banner-md.webp">
-        <img src="./assets/img/banner-xs.webp">
+        <source type="image/webp" media="(min-width:  1024px )" srcset="assets/img/banner-xl.webp">
+        <source type="image/png"  media="(min-width:  1024px )" srcset="assets/img/banner-xl.png">
+        <source type="image/webp" media="(min-width:  768px )"  srcset="assets/img/banner-md.webp">
+        <source type="image/png"  media="(min-width:  768px )"  srcset="assets/img/banner-md.png">
+        <source  srcset="assets/img/banner-xs.webp">
+        <img src="./assets/img/banner-xs.png" alt="Robin Williams. A Product Designer.">
       </picture>
       <div class="md:w-102 lg:w-2xl  mr-0 md:mr-9 lg:mr-10 md:py-35 px-5 md:px-0 z-10">
         <h1 class="text-white font-bold banner-title mb-4 md:mb-8 leading-[1.2]">
@@ -63,9 +66,10 @@
             <p class="text-lg text-gray-600 mb-24 lg:mb-33.5 md:mb-16.75 leading-[1.5]">I think everyone wants the same thing - relationship with humanity, peace with the metap hysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
             <a href="#" class="text-indigo-950 leading-[1.75] border-b pb-1 border-gray-500">More about me</a>
         </div>
-    <div>
-        <img src="./assets/img/philosophy.webp" class="object-cover w-full h-112.5 md:h-full" alt="philosophy">
-    </div>
+    <picture>
+        <source  srcset="assets/img/philosophy.webp">
+        <img src="./assets/img/philosophy.png" class="object-cover w-full h-112.5 md:h-full" alt="philosophy">
+    </picture>
     </section>    <section class="max-w-7xl mx-auto w-full lg:py-30 md:py-20 py-16 grid md:grid-cols-1 lg:grid-cols-[1fr_2fr] lg:px-18 md:px-10 px-5">
             <div class="lg:max-w-104">
             <h2 class="text-3xl md:text-5xl font-bold  md:mb-6 mb-4">Skillset</h2>
@@ -202,9 +206,10 @@
             <p class="text-lg text-gray-600 mb-24 lg:mb-33.5 md:mb-16.75 leading-[1.5]">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
             <a href="#" class="text-indigo-950 leading-[1.75] border-b pb-1 border-gray-500">Follow me on IG</a>
         </div>
-    <div>
-        <img src="./assets/img/instagram.webp" class="object-cover w-full h-112.5 md:h-full" alt="instagram">
-    </div>
+    <picture>
+        <source  srcset="assets/img/instagram.webp">
+        <img src="./assets/img/instagram.png" class="object-cover w-full h-112.5 md:h-full" alt="instagram">
+    </picture>
     </section>    <section class="max-w-4xl mx-auto w-full py-16 md:py-20 lg:py-30  md:px-10 px-5">
             <h2 class="text-3xl md:text-5xl text-white font-bold mb-6 leading-[1.2]">Dribbble</h2>
             <p class="text-lg text-gray-500 mb-10 max-w-147 leading-[1.5]">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
@@ -390,7 +395,6 @@
         </symbol>
     </svg>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
   </body>
 </html>
