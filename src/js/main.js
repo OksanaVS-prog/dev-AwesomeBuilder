@@ -22,10 +22,10 @@ const swiper = new Swiper('.swiper', {
       loop: false,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       slidesPerGroup: 1,
       grid: { rows: 1 },
-      spaceBetween: 20, // например, на десктопе можно оставить
+      spaceBetween: 0, // например, на десктопе можно оставить
       loop: true,
     },
   },
