@@ -2,6 +2,8 @@ import '../css/style.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+const DESKTOP_BREAKPOINT = 1024;
+
 const swiper = new Swiper('.swiper', {
   autoplay: {
     delay: 0,
@@ -9,6 +11,7 @@ const swiper = new Swiper('.swiper', {
   },
   speed: 3000,
   freeMode: false,
+  spaceBetween: 0,
 
   breakpoints: {
     0: {
@@ -18,35 +21,30 @@ const swiper = new Swiper('.swiper', {
         rows: 3,
         fill: 'row',
       },
-      spaceBetween: 0, // ← УБИРАЕМ ОТСТУПЫ
       loop: false,
     },
-    1024: {
+    [DESKTOP_BREAKPOINT]: {
       slidesPerView: 4,
       slidesPerGroup: 1,
       grid: { rows: 1 },
-      spaceBetween: 0, // например, на десктопе можно оставить
       loop: true,
     },
   },
 
   on: {
-    init(sw) {
-      toggleAutoplay(sw);
-    },
-    resize(sw) {
-      toggleAutoplay(sw);
-    }
-  }
+    init: handleAutoplay,
+    resize: handleAutoplay,
+  },
 });
 
-function toggleAutoplay(swiper) {
-  if (window.innerWidth >= 1024) {
-    swiper.autoplay.start();
-  } else {
-    swiper.autoplay.stop();
-  }
+function handleAutoplay(swiper) {
+  const isDesktop = window.matchMedia(
+    `(min-width: ${DESKTOP_BREAKPOINT}px)`
+  ).matches;
+
+  swiper.autoplay[isDesktop ? 'start' : 'stop']();
 }
+
 
 const burgerBtn = document.querySelector('#burger');
 const mobileContainer = document.querySelector('#mobile-container')
